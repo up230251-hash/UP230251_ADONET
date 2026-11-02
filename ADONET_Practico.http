@@ -1,0 +1,6 @@
+@ADONET_Practico_HostAddress = http://localhost:5131
+
+GET {{ADONET_Practico_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

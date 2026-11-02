@@ -1,0 +1,14 @@
+CREATE DATABASE IF NOT EXISTS ProductosDb
+  CHARACTER SET utf8mb4
+  COLLATE utf8mb4_unicode_ci;
+
+USE ProductosDb;
+
+CREATE TABLE IF NOT EXISTS Productos (
+    Id INT NOT NULL AUTO_INCREMENT,
+    Nombre VARCHAR(120) NOT NULL,
+    Descripcion VARCHAR(500) NULL,
+    Precio DECIMAL(12,2) NOT NULL,
+    Existencias INT NOT NULL DEFAULT 0,
+    PRIMARY KEY (Id)
+);
